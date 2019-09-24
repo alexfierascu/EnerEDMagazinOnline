@@ -14,9 +14,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Produs")
+@Table(name = "product")
 
-public class Produs {
+public class Product {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -46,5 +46,22 @@ public class Produs {
 
   @Column(name = "garantie_produs")
   private int garantieProdus;
+
+  @Column(name = "cantitate")
+  private int cantitateProdus;
+
+  private Cart cart;
+
+
+  public Cart getCart () {
+
+    return cart;
+  }
+
+
+  public void setCart (Cart cart) {
+
+    this.cart = cart;
+  }
 
 }

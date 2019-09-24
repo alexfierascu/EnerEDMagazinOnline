@@ -15,8 +15,8 @@ import java.util.HashMap;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "magazin")
-public class Magazin {
+@Table(name = "shop")
+public class Shop {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)

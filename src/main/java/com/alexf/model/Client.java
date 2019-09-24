@@ -16,8 +16,9 @@ import java.util.ArrayList;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Client")
+@Table(name = "client")
 public class Client {
+
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -71,5 +72,8 @@ public class Client {
 
   @Column(name = "carduri_cadou_client")
   private ArrayList<String> carduriCadouClient;
+
+
+  private Cart cart;
 
 }
